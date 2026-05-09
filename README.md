@@ -70,6 +70,8 @@ superstore-data-engineering/
 - Customer Segment Profitability Analysis
 - Monthly Revenue Trend Analysis
 ---
+## Tables Created
+![Tables Created](screenshots/tables_created.png)
 
 ## Future Improvements
 
