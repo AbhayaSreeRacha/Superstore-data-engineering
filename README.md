@@ -76,6 +76,8 @@ superstore-data-engineering/
 ## ETL Verfication Query
 ![ETL Verification Query](screenshots/etl_verification.png)
 
+## Top Revenue Generating Products
+![Top Revenue Generating Products](screenshots/top_revenue_generating_products.png)
 
 ## Future Improvements
 
