@@ -72,11 +72,9 @@ superstore-data-engineering/
 ---
 ## Tables Created
 ![Tables Created](screenshots/tables_created.png)
-![Tables Created](screenshots/etl_verification.png)
-![Tables Created](screenshots/top_revenue_generating_products.png)
-![Tables Created](screenshots/regional_sales_performance_analysis.png)
-![Tables Created](screenshots/customer_segment_profitability_analysis.png)
-![Tables Created](screenshots/monthly_revenue_trend_analysis.png)
+
+## ETL Verfication Query
+![ETL Verification Query](screenshots/etl_verification.png)
 
 ## Future Improvements
 
