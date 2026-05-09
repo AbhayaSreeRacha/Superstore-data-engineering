@@ -76,17 +76,6 @@ superstore-data-engineering/
 ## ETL Verfication Query
 ![ETL Verification Query](screenshots/etl_verification.png)
 
-## Top Revenue Generating Products
-![Tables Created](screenshots/top_revenue_generating_products.png)
-
-## Regional Sales Performance Analysis
-![Tables Created](screenshots/regional_sales_performance_analysis.png)
-
-## Customer Segment Profitability Analysis
-![Tables Created](screenshots/customer_segment_profitability_analysis.png)
-
-## Monthly Revenue Trend Analysis
-![Tables Created](screenshots/monthly_revenue_trend_analysis.png)
 
 ## Future Improvements
 
