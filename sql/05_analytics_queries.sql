@@ -11,4 +11,6 @@ SELECT region, SUM(sales) AS Total_Sales FROM superstore_raw GROUP BY region;
 SELECT segment, SUM(sales) as Total_Sales FROM superstore_raw GROUP BY segment;
 
 -- Monthly Revenue Trend Analysis
-SELECT DATE_TRUNC('month', order_date) AS month, SUM(sales) AS monthly_sales, SUM(profit) AS monthly_profit FROM orders JOIN order_items USING (order_id) GROUP BY month ORDER BY month LIMIT 12;
+SELECT DATE_TRUNC('month', order_date) AS month, SUM(sales) AS monthly_sales,
+SUM(profit) AS monthly_profit FROM orders JOIN order_items USING (order_id) WHERE order_date >= (SELECT DATE_TRUNC('month', MAX(order_date)) - INTERVAL '11 months'
+FROM orders) GROUP BY month ORDER BY month;
