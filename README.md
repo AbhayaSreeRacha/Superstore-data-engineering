@@ -79,6 +79,9 @@ superstore-data-engineering/
 ## Top Revenue Generating Products
 ![Top Revenue Generating Products](screenshots/top_revenue_generating_products.png)
 
+## Regional Sales Performance Analysis
+![Regional Sales Performance Analysis](screenshots/regional_sales_performance_analysis.png)
+
 ## Future Improvements
 
 - Power BI dashboard
