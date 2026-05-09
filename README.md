@@ -82,6 +82,9 @@ superstore-data-engineering/
 ## Regional Sales Performance Analysis
 ![Tables Created](screenshots/regional_sales_performance_analysis.png)
 
+## Customer Segment Profitability Analysis
+![Tables Created](screenshots/customer_segment_profitability_analysis.png)
+
 ## Future Improvements
 
 - Power BI dashboard
