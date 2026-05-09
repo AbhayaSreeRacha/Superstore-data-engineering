@@ -1,0 +1,4 @@
+insert into customers select customer_id, max(customer_name), max(segment), max(country), max(region) from superstore_raw group by customer_id;
+insert into orders select order_id, max(to_date(order_date, 'MM/DD/YYYY')), max(to_date(ship_date, 'MM/DD/YYYY')), max(ship_mode), max(customer_id), max(region), max(postal_code) from superstore_raw group by order_id;
+insert into products select product_id, max(product_name), max(category), max(sub_category) from superstore_raw group by product_id;
+insert into order_items select row_id, max(order_id), max(product_id), max(sales), max(quantity), max(discount), max(profit) from superstore_raw group by row_id;

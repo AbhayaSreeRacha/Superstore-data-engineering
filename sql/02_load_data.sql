@@ -1,0 +1,1 @@
+\copy superstore_raw from 'C:\Superstore.csv' delimiter ',' csv header;
