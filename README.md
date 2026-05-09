@@ -85,6 +85,9 @@ superstore-data-engineering/
 ## Customer Segment Profitability Analysis
 ![Tables Created](screenshots/customer_segment_profitability_analysis.png)
 
+## Monthly Revenue Trend Analysis
+![Tables Created](screenshots/monthly_revenue_trend_analysis.png)
+
 ## Future Improvements
 
 - Power BI dashboard
