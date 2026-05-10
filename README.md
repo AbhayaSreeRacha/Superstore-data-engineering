@@ -88,6 +88,9 @@ superstore-data-engineering/
 ## Monthly Revenue Trend Analysis
 ![Monthly Revenue Trend Analysis](screenshots/monthly_revenue_trend_analysis.png)
 
+## Power BI Dashboard
+![Power BI Dashboard](screenshots/powerbi.png)
+
 ## Future Improvements
 
 - Power BI dashboard
