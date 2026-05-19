@@ -89,7 +89,28 @@ superstore-data-engineering/
 ![Monthly Revenue Trend Analysis](screenshots/monthly_revenue_trend_analysis.png)
 
 ## Power BI Dashboard
-![Power BI Dashboard](screenshots/powerbi.png)
+Executive Sales Performance Overview
+Product Revenue & Profitability Analysis
+Customer & Regional Intelligence Overview
+
+![Power BI Dashboard](screenshots/executive_sales_overview.png)
+![Power BI Dashboard](screenshots/product_profitability_analysis.png)
+![Power BI Dashboard](screenshots/customer_and_geographic_analysis.png)
+
+Power BI Features:
+- Interactive KPI cards
+- Monthly revenue trend analysis
+- Regional sales analysis
+- Product profitability analysis
+- Customer intelligence reporting
+- Synchronized slicers
+- Interactive dashboard filtering
+
+Dashboard Technologies:
+- Power BI Desktop
+- PostgreSQL
+- DAX Measures
+- Star Schema Data Model
 
 ## Future Improvements
 
