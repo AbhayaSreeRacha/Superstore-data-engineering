@@ -117,7 +117,9 @@ Dashboard Technologies:
 
 ## Future Improvements
 
-- Power BI dashboard
-- Advanced SQL analytics
-- Data quality checks
+- Advanced SQL window functions
 - Python ETL automation
+- Incremental data loading
+- Cloud database deployment
+- Real-time dashboard integration
+- Automated reporting pipeline
