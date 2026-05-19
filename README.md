@@ -33,6 +33,7 @@ superstore-data-engineering/
 │
 ├── data/
 ├── sql/
+├── dashboard/
 ├── screenshots/
 ├── README.md
 └── .gitignore
