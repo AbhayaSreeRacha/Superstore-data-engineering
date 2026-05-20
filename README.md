@@ -137,7 +137,7 @@ Advanced analytics performed:
 - Predictive revenue trend analysis
 - Customer revenue segmentation
 
-## Customer & Regional Intelligence Overview
+## Python ETL Pipeline Validation
 ![Python ETL Automation](screenshots/python_etl_pipeline.png)
 
 ## Future Improvements
