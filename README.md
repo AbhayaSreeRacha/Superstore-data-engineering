@@ -115,9 +115,29 @@ Dashboard Technologies:
 - DAX Measures
 - Star Schema Data Model
 
+## Advanced SQL Analytics
+
+Implemented advanced PostgreSQL window functions including:
+
+- RANK()
+- DENSE_RANK()
+- SUM() OVER()
+- PARTITION BY
+- LAG()
+- LEAD()
+- NTILE()
+
+Advanced analytics performed:
+
+- Product profitability ranking
+- Running revenue analysis
+- Regional sales benchmarking
+- Month-over-month sales comparison
+- Predictive revenue trend analysis
+- Customer revenue segmentation
+
 ## Future Improvements
 
-- Advanced SQL window functions
 - Python ETL automation
 - Incremental data loading
 - Cloud database deployment
