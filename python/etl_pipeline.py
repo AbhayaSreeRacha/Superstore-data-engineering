@@ -38,7 +38,7 @@ df.columns = (
 )
 
 print("Column names standardized")
-print(df.columns)
+# print(df.columns)
 
 print("CSV loaded successfully")
 print(f"Total rows loaded: {len(df)}")
