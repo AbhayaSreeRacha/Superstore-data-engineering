@@ -34,6 +34,7 @@ superstore-data-engineering/
 ├── data/
 ├── sql/
 ├── dashboard/
+├── python/
 ├── screenshots/
 ├── README.md
 └── .gitignore
@@ -136,9 +137,11 @@ Advanced analytics performed:
 - Predictive revenue trend analysis
 - Customer revenue segmentation
 
+## Customer & Regional Intelligence Overview
+![Python ETL Automation](screenshots/python_etl_pipeline.png)
+
 ## Future Improvements
 
-- Python ETL automation
 - Incremental data loading
 - Cloud database deployment
 - Real-time dashboard integration
