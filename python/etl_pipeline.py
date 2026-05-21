@@ -1,5 +1,11 @@
 import pandas as pd
-from sqlalchemy import create_engine, text
+#from sqlalchemy import create_engine, text
+
+from sqlalchemy import text
+
+from python.database import engine
+from python.config import CSV_PATH
+from python.validation import validate_tables
 
 # -------------------------------
 # DATABASE CONNECTION
@@ -11,9 +17,9 @@ host = "localhost"
 port = "5432"
 database = "retail_analytics"
 
-engine = create_engine(
-    f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}"
-)
+#engine = create_engine(
+#    f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}"
+#)
 
 print("Database connection successful")
 
@@ -23,7 +29,7 @@ print("Database connection successful")
 
 csv_path = r"C:\Projects\superstore.csv"
 
-df = pd.read_csv(csv_path,encoding='latin1')
+df = pd.read_csv(CSV_PATH,encoding='latin1')
 
 # -------------------------------
 # STANDARDIZE COLUMN NAMES
@@ -285,31 +291,33 @@ else:
 #FROM order_items;
 #"""
 
-query = """
-SELECT 'customers' AS table_name, COUNT(*) AS total_rows
-FROM customers
+#query = """
+#SELECT 'customers' AS table_name, COUNT(*) AS total_rows
+#FROM customers
 
-UNION ALL
+#UNION ALL
 
-SELECT 'products', COUNT(*)
-FROM products
+#SELECT 'products', COUNT(*)
+#FROM products
 
-UNION ALL
+#UNION ALL
 
-SELECT 'orders', COUNT(*)
-FROM orders
+#SELECT 'orders', COUNT(*)
+#FROM orders
 
-UNION ALL
+#UNION ALL
 
-SELECT 'order_items', COUNT(*)
-FROM order_items;
-"""
+#SELECT 'order_items', COUNT(*)
+#FROM order_items;
+#"""
 
-validation = pd.read_sql(query, engine)
+#validation = pd.read_sql(query, engine)
+
+validate_tables(engine)
 
 #result = conn.execute(text("SELECT COUNT(*) FROM customers"))
 #print(result.scalar())
 
-print(validation)
+#print(validation)
 
 print("Pipeline completed successfully")
