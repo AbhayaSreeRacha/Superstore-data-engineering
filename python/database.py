@@ -1,6 +1,11 @@
+import os
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
-from python.config import *
 
-engine = create_engine(
-    f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-)
+load_dotenv()
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+engine = create_engine(DATABASE_URL)
+
+print("Database connection successful")

@@ -1,11 +1,17 @@
 import pandas as pd
-#from sqlalchemy import create_engine, text
 
+#from sqlalchemy import create_engine, text
 from sqlalchemy import text
 
+
+#CSV_PATH = BASE_DIR / "data" / "Sample - Superstore.csv"
+
+#SCHEMA_PATH = BASE_DIR / "sql" / "03_create_tables.sql"
+
 from python.database import engine
-from python.config import CSV_PATH
+from python.config import CSV_PATH, SCHEMA_PATH
 from python.validation import validate_tables
+
 
 # -------------------------------
 # DATABASE CONNECTION
@@ -67,8 +73,16 @@ print("Data loaded into superstore_raw table")
 # -------------------------------
 
 #with engine.connect() as conn:
+with open(SCHEMA_PATH, "r") as file:
+        schema_sql = file.read()
+
 with engine.begin() as conn:
 
+   
+    conn.execute(text(schema_sql))
+#conn.commit()
+
+    print("Warehouse tables created successfully")
     # -------------------------------
     # CLEAR EXISTING DATA
     # -------------------------------
@@ -100,7 +114,6 @@ with engine.begin() as conn:
     #    region
     #FROM superstore_raw;
     #"""))
-
     customer_result = conn.execute(text("""
     
     INSERT INTO customers (

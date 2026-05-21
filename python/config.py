@@ -16,5 +16,6 @@ DB_PORT = "5432"
 DB_NAME = "retail_analytics"
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+SCHEMA_PATH = BASE_DIR / "sql" / "03_create_tables.sql"
 
 CSV_PATH = BASE_DIR / "data" / "Superstore.csv"
